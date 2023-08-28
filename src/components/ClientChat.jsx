@@ -1,10 +1,11 @@
 import { styled } from "styled-components";
 
+// eslint-disable-next-line react/prop-types
 export const Client = ({ text }) => {
   return (
     <>
       <ClientChat>
-        <ChatContent>{text}</ChatContent>
+        <ChatContent>{eval(JSON.stringify(text))}</ChatContent>
       </ClientChat>
     </>
   );
